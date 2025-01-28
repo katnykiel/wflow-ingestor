@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#
+# simtool
+#
+/usr/bin/invoke_app "$@" -t wflowingestor \
+                         -C "start_jupyter -t -T @tool landing_page.ipynb" \
+                         -u anaconda-7 \
+                         -w headless \
+                         -r none
